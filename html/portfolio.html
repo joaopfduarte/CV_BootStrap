@@ -1,28 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../CV_BootStrap/img/simbolo_degradê.png" alt="Bootstrap" width="40" height="34">
-                  </a>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                  <a class="nav-link active" href="../CV_BootStrap/html/portfolio.html">Portfólio</a>
-                  <a class="nav-link" href="../CV_BootStrap/html/contato.html">Contato</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CV_BootStrap/css/index.css">
+  <style>
+    .portfolio-section {
+      background-color: #333;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .portfolio-item {
+      border: 1px solid white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .section-heading {
+      border-bottom: 2px solid #f1f1f1;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .btn-arrow {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn-arrow i {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/perfil preto.png" alt="Logo" width="40" height="34">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link active" href="#">Portfólio</a>
+            <a class="nav-link" href="../html/contato.html">Contato</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Seção de Portfólio -->
+  <div class="portfolio-section">
+    <div class="container">
+        <h1 class="display-5 section-heading">Meu Portfólio</h1>
+        <div class="row">
+            <!-- Item de Portfólio 1 -->
+            <div class="col-md-12">
+                <div class="portfolio-item">
+                    <h4>Projeto de Website para ONG</h4>
+                    <p>Desenvolvimento de um site institucional para uma ONG, com foco em comunicação e doações online.</p>
+                    <a href="https://github.com/Grupo-Simios" target="_blank" class="btn btn-primary btn-arrow">
+                      Ver Projeto <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
-              </div>
             </div>
-          </nav>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+
+            <!-- Item de Portfólio 2 -->
+            <div class="col-md-12">
+                <div class="portfolio-item">
+                   
+                    <h4>Aplicação para aprendizado financeiro</h4>
+                    <p>Criação de um projeto onde usuários podem treinar a utilização de plataformas financeiras em compra e venda de ativos</p>
+                    <a href="https://github.com/J-start" target="_blank" class="btn btn-primary btn-arrow">
+                      Ver Projeto <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item de Portfólio 3 -->
+            <div class="col-md-12">
+                <div class="portfolio-item">
+                    
+                    <h4>Página de vendas para prestadora de serviços</h4>
+                    <p>Desenvolvimento de página de vendas para prestadora de serviços de prospecção ativa para agências de marketing.</p>
+                    <a href="https://jlappm.com.br/" target="_blank" class="btn btn-primary btn-arrow">
+                      Ver Projeto <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
