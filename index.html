@@ -22,18 +22,25 @@
             background-position: center;
             background-repeat: no-repeat;
             color: white;
-            height: 45vh;
+            height: 50vh;
             margin: 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .hero-content {
-            padding: 30px;
+            padding: 20px;
             border-radius: 8px;
-            max-width: auto; /* Ajuste a largura máxima */
+            max-width: auto;
+            /* Ajuste a largura máxima */
             width: 100%;
-            height: auto;
-            /* Garante que o conteúdo use 100% da largura disponível */
+            /* Garante que o conteúdo ocupe 100% da largura */
+            height: 100%;
+            /* Garante que o conteúdo ocupe toda a altura disponível */
+            overflow: hidden;
+            /* Impede que o conteúdo ultrapasse os limites */
+            box-sizing: border-box;
+            /* Inclui o padding dentro da altura e largura */
+            arante que o conteúdo use 100% da largura disponível */
         }
 
         .hero-section h1,
@@ -64,11 +71,13 @@
 
         @media (max-width: 767px) {
             .hero-content {
-                padding: 20px; /* Reduz o padding em telas menores */
+                padding: 20px;
+                /* Reduz o padding em telas menores */
             }
 
             .hero-section {
-                height: 60vh; /* Ajusta a altura da seção em telas menores */
+                height: 60vh;
+                /* Ajusta a altura da seção em telas menores */
             }
         }
     </style>
@@ -83,7 +92,9 @@
                     <img src="../CV_BootStrap/img/perfil-preto.svg" alt="Logo" width="40" height="34">
                 </a>
                 <!-- Botão para colapsar o menu em telas menores -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Menu de navegação -->
