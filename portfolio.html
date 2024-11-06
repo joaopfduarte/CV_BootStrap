@@ -47,20 +47,26 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../CV_BootStrap/img/perfil-preto.svg" alt="Logo" width="40" height="34">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="../CV_BootStrap/index.html">Home</a>
-            <a class="nav-link active" href="portfolio.html">Portfólio</a>
-            <a class="nav-link" href="../CV_BootStrap/contato.html">Contato</a>
-          </div>
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../CV_BootStrap/img/perfil-preto.svg" alt="Logo" width="40" height="34">
+            </a>
+            <!-- Botão para colapsar o menu em telas menores -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu de navegação -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" href="../CV_BootStrap/portfolio.html">Portfólio</a>
+                    <a class="nav-link" href="../CV_BootStrap/contato.html">Contato</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
 
   <!-- Seção de Portfólio -->
   <div class="portfolio-section">

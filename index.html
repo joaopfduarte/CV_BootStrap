@@ -28,10 +28,12 @@
         }
 
         .hero-content {
-            background-color: rgba(0, 0, 0, 0.6);
             padding: 30px;
             border-radius: 8px;
-            max-width: 600px;
+            max-width: auto; /* Ajuste a largura máxima */
+            width: 100%;
+            height: auto;
+            /* Garante que o conteúdo use 100% da largura disponível */
         }
 
         .hero-section h1,
@@ -59,6 +61,16 @@
             padding-bottom: 20px;
             margin-bottom: 20px;
         }
+
+        @media (max-width: 767px) {
+            .hero-content {
+                padding: 20px; /* Reduz o padding em telas menores */
+            }
+
+            .hero-section {
+                height: 60vh; /* Ajusta a altura da seção em telas menores */
+            }
+        }
     </style>
 </head>
 
@@ -66,9 +78,15 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="../CV_BootStrap/img/perfil-preto.svg" alt="Logo" width="40" height="34">
                 </a>
+                <!-- Botão para colapsar o menu em telas menores -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu de navegação -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -83,13 +101,19 @@
     <!-- Primeira Sessão -->
     <div class="hero-section d-flex align-items-center justify-content-start">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="display-4">Prazer, sou o João Pedro</h1>
-                <p class="lead">
-                    Sou estudante de engenharia de computação no Cefet-MG, campus Timóteo, e trabalho como profissional
-                    liberal para empresas que buscam por aumentar seu faturamento mensal através de tráfego pago para
-                    páginas de vendas. No momento, busco por oportunidades de estágio em desenvolvimento front-end.
-                </p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="hero-content">
+                        <h1 class="display-4">Prazer, sou o João Pedro</h1>
+                        <p class="lead">
+                            Sou estudante de engenharia de computação no Cefet-MG, campus Timóteo, e trabalho como
+                            profissional liberal para empresas que buscam por aumentar seu faturamento mensal através de
+                            tráfego pago para páginas de vendas. No momento, busco por oportunidades de estágio em
+                            desenvolvimento front-end.
+                        </p>
+                    </div>
+                </div>
+                <!-- Aqui pode ser colocada uma imagem, se necessário -->
             </div>
         </div>
     </div>
